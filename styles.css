@@ -1,0 +1,66 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  background-color: white;
+  gap: 50px;
+  justify-content: space-around;
+  text-align: center;
+
+}
+.grid-container > div {
+  background-color: dodgerblue;
+  border: 5px solid greenyellow;
+  font-size: 30px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  padding: 0%;
+  margin: auto;
+
+  
+}
+.flex-container{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    padding: 30px;
+
+}     
+.flex-container >div{
+    background-color: dodgerblue;
+    border: 5px solid greenyellow;
+    padding: 10px;
+    margin: auto;
+}
+/*using the media queries in css*/
+@media only screen and (max-width: 600px){
+    .grid-container{
+        background-color: blue;
+    }
+    
+}
+@media only screen and (min-width: 600px){
+    .flex-container{
+        background-color: red;
+    }
+    
+}
+@media only screen and (max-width: 800px){
+    .grid-container{
+        background-color: green;
+    }
+    
+}
+@media only screen and (min-width: 800px){
+    .flex-container{
+        background-color: green;
+    }
+    
+}
+@media only screen and (max-width: 1200px){
+    .grid-container{
+        background-color: rgb(41, 0, 128);
+    }
+    
+}
+
